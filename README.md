@@ -50,5 +50,5 @@ This application/site was created as a submission to a [DevChallenges](https://d
 
 ## Contact
 
-- GitHub [@your-username](https://github.com/DeRaowl/)
-- Twitter [@your-twitter](https://twitter.com/DeRaowl)
+- GitHub [Rahul Reddy](https://github.com/DeRaowl/)
+- Twitter [Rahul Reddy](https://twitter.com/DeRaowl)
