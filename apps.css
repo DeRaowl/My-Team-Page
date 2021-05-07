@@ -4,12 +4,15 @@
     box-sizing: border-box;
 }
 
+a{
+    text-decoration: none;
+}
 
 .main{
     font-family: 'Poppins', sans-serif;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: auto,1fr,1fr;
+    grid-template-rows: auto 1fr 1fr;
     grid-row-gap: 20px;
     grid-column-gap: 20px;
 }
@@ -22,10 +25,11 @@
 }
 
 .main-content h1{
-    font-size: 40px;
-
+    font-size: 30px;
+    /* max-width: 90%; */
     font-weight: 700;
     font-style: normal;
+    margin-left: 40px;
 }
 
 .sub-section{
@@ -38,6 +42,7 @@
     font-size: 25px;
     font-style: normal;
     font-weight: 500;
+    max-width: 90%;
 }
 
 .sub-section p{
@@ -45,25 +50,172 @@
     font-size: 15px;
     font-weight: 500;
     font-style: normal;
+    max-width: 80%;
 }
 
 img{
-    width: 100%;
+    max-width: 100%;
+    width: 20vw;
 }
 
 .image1{
     grid-area: 2/1/3/2;
+    margin: 50px 0 0 0;
+    margin-left: 9vw;
 }
 
 .image2{
     grid-area: 2/2/3/3;
+    margin: 140px 0 0 0;
+    margin-left: 4vw;
 }
 
-
 .image3{
-    grid-area: 2/3/3/4
+   grid-area:  2/3/3/4;
+   margin: 50px 0px 0px 0px;
+    margin-right: 9vw;
 }
 
 .image4{
     grid-area: 3/1/4/2;
+    margin: 50px 0 0 0;
+    margin-left: 9vw;
 }
+
+.image5{
+    grid-area: 3/2/4/3;
+    margin: 140px 0 0 0;
+    margin-left: 4vw;
+}
+
+.image6{
+   grid-area:  3/3/4/4;
+   margin-right: 9vw;
+   margin: 50px 0 0 0;
+    margin-right: 9vw;
+}
+
+span{
+    writing-mode: vertical-lr;
+    position: absolute;
+    font-size: 15px;
+}
+
+p{
+    font-family: sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.footer{
+    font-size: 15px;
+    text-transform: capitalize;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    opacity: 0.5;
+}
+
+@media screen and (max-width: 720px) {
+    .main{
+            max-width: 90%;
+            margin: 0 auto;
+            justify-items: center;
+            align-items: center;        
+            font-family: 'Poppins', sans-serif;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: 0.2fr 0.2fr 1fr 1fr 1fr;
+            grid-row-gap: 10px;
+            grid-column-gap: 30px;
+        }
+        
+        .main-content{
+            grid-area: 1/1/2/3;
+            margin-right: 120px;
+            margin-bottom: 20px;
+        }
+        
+        .main-content h1{
+            font-size: 25px;
+            font-weight: bold;
+            font-style: normal;
+            text-align: left;
+        }
+        
+        .sub-section{
+            grid-area: 2/1/3/3;
+            margin-top: 0vw;
+        }
+        
+        .sub-section h2{
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 700;
+            max-width: 90%;
+        }
+        
+        .sub-section p{
+        
+            font-size: 15px;
+            font-weight: 500;
+            font-style: normal;
+            max-width: 80%;
+        }
+        
+        img{
+            max-width: 100%;
+            width: 40vw;
+            
+        }
+        
+        .image1{
+            grid-area: 3/1/4/2;
+            margin: 30px 0 0 0;
+            margin-left: 5vw;
+        }
+        
+        .image2{
+            grid-area: 3/2/4/3;
+            margin: 120px 0 0 0;
+            margin-right: 5vw;
+        }
+        
+        .image3{
+           grid-area:  4/1/5/2;
+           margin: 10px 0px 0px 0px;
+           margin-left: 5vw;
+        }
+        
+        .image4{
+            grid-area: 4/2/5/3;
+            margin: 10px 0 0 0;
+            margin-right: 5vw;
+        }
+        
+        .image5{
+            grid-area: 5/1/6/2;
+            margin: 120px 0 0 0;
+            margin-left: 5vw;
+        }
+        
+        .image6{
+           grid-area:  5/2/6/3;
+           margin: 0px 0 0 0;
+            margin-right: 5vw;
+        }
+        
+        span{
+            writing-mode: vertical-lr;
+            position: absolute;
+            font-size: 12px;
+        }
+        
+        p{
+            font-family: sans-serif;
+            font-weight: 300;
+            font-size: 12px;
+        }
+        
+    }
